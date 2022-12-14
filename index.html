@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="container-fluid p-0" >
-        <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary fixed-top">
             <div class="container-fluid">
                     <a class="navbar-brand navbar-left mx-5" href="#" >Portfolio Bootstrap</a>
                     <div class="navbar-nav navbar-right mx-5">
@@ -35,25 +35,25 @@
             <p>...</p>
           </div>     -->
     </header>
-    <section class="row bg-dark" style="height:100vh;background: url('images/Illustration-header.svg') no-repeat 100%;">
-        <div class="col-sm-6">
-          <div class="card my-5 mx-5 border border-0 bg-dark">
-            <div class="card-body" style="width:28em" >
-              <h1 class="h1 card-title display-2" style="color:rgb(237, 134, 8) ;">Hey There. I’m Alex</h1>
-              <h2 class="h2" style="color:rgb(253, 253, 253) ;">I’am a Software Developer</h2>
-              <p class="card-text" style="color:rgb(253, 253, 253) ;">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+    <section class="row bg-dark">
+        <div class="col-sm-6 text-center d-flex my-2">
+          <div class="card my-5 mx-5 border border-0 bg-dark text-danger">
+            <div class="card-body mt-5">
+              <h1 class="card-title" style="color:rgb(237, 134, 8) ;">Hey There. I’m Alex</h1>
+              <h2>I’am a Software Developer</h2>
+              <p class="card-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</p>
             </div>
           </div>
         </div>
-        <ul class="list-group">
-            <li class="list-group-item"><i class="bi bi-github"></i></li>
-            <li class="list-group-item"><i class="bi bi-linkedin"></i></li>
-            <li class="list-group-item"><i class="bi bi-twitter"></i>li>
-            <li class="list-group-item"><i class="bi bi-github"></i></li>
-          </ul>
+        <div class="col-sm-6 p-0 m-0 " >
+      
+            <img class="img-fluid float-end" src="images/header-bg.png" alt="project_1"
+                  style="width:620;height:435px">
+       
+        </div>
       </section>
-      <section class="">
+      <section class="my_works" id="#scrollspyHeading1">
         <!-- <article class="row row-cols-3">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
@@ -72,23 +72,22 @@
         </article> -->
         <article class="row row-cols-3">
             <div class="col-sm-4">
-                <div class="card my-5 mx-5 border border-0" style="background:url('images/Img\ Placeholder2.png') ;">
-                  <div class="card-body">
-                    <h1 class="card-title" style="color:rgb(237, 134, 8) ;"></h1>
-                    <h2>I’am a Software Developer</h2>
-                    <p class="card-text"></p>
-                  </div>
+                <div class="card my-5 mx-5 border border-0">
+                  <img class="img-fluid" src="images/Placeholder2.png" alt="project_1"
+                  style="width:369px;height:435px">
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="card my-5 mx-5 border border-0">
-                  <div class="card-body">
-                    <h1 class="card-title" style="color:rgb(237, 134, 8) ;">Hey There. I’m Alex</h1>
+                <div class="card my-5 mx-5 border border-0" >
+                  <img class="img-fluid" src="images/Placeholder2.png" alt="project_1"
+                  style="width:369px;height:435px">
+                  <div class="card-body position-absolute text-warning d-flex flex-column">
                     <h2>I’am a Software Developer</h2>
                     <p class="card-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                       don’t hestiate to contact me.</p>
                   </div>
                 </div>
+              </div>
               </div>
               <div class="col-sm-4">
                 <div class="card my-5 mx-5 border border-0">
@@ -131,8 +130,39 @@
                 </div>
               </div>
         </article>
+      </section>
+      <section id="scrollspyHeading3" class="container-fluid">
+        <div class="row row-cols-2 mb-3 mt-3 mx-5">
+          <div class="col-md-4 text-start">
+            <h2>I'm always interested <br/> in hearing about new projects, so if you'd <br/>like to chat please <br/>get in touch.</h2>
+          </div>
+          <div class="col-md-8">
+        <form action="/action_page.php">
+          <div class="container-fluid">
+          <div class="row row-cols-2">
+          <div class="col-6 ">
+            <label for="first-name" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="first-name" placeholder="Enter First Name" name="first-name">
+          </div>
+          <div class="col-6">
+            <label for="last-name" class="form-label">Password:</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Enter Last Name" name="last-name">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+          <div class="form-text mb-3">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
 
-
+          <button type="submit" class="btn btn-primary">Get in Touch</button>
+        </div>
+        </form>
+        </div>
+      </div>
       </section>
       <div class="row">
         <form class="col-5">
