@@ -1,0 +1,10 @@
+module.exports = function (str) {
+  // write your code here
+  str =str.replace(/[^a-z0-9]/gi, '');
+  str = str.toLowerCase();
+   // reverse input string and return the result of the
+  let str1 =  str.split('').reverse().join('');
+  // comparisong
+  console.log(str === str1);
+  return str === str1;
+}
